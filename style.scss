@@ -132,11 +132,21 @@ body {
 		align-items: center;
 		justify-content: space-around;
 		margin-bottom: 25px;
+		@media (max-width: 750px) {
+			flex-direction: column;
+		}
 		.Description {
 			width: 50%;
+			@media (max-width: 750px) {
+				width: 100%;
+				margin-bottom: 25px;
+			}
 		}
 		.Details {
 			width: 30%;
+			@media (max-width: 750px) {
+				width: 100%;
+			}
 		}
 		h1 {
 			font-size: 1.3rem;
@@ -171,7 +181,7 @@ body {
 		font-weight: 500;
 		border: none;
 		outline: none;
-		height: 150px;
+		height: 180px;
 		margin: 0 auto;
 		background-color: #f6f5fa;
 	}
