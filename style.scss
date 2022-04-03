@@ -114,9 +114,13 @@ body {
 		}
 	}
 }
+
 .courese_list_section {
 	width: 100%;
 	padding: 30px;
+	@media (max-width: 500px) {
+		padding: 10px;
+	}
 	.title {
 		color: #616370;
 		h1 {
@@ -131,18 +135,37 @@ body {
 		margin: 20px 0;
 		.list {
 			width: 80%;
-			height: 200px;
+			min-height: 200px;
 			display: flex;
 			align-items: center;
 			padding: 20px;
 			border-left: 5px solid #3810db;
+			position: relative;
 			box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+			@media (max-width: 800px) {
+				width: 100%;
+				padding: 20px 20px;
+				margin: 20px 0;
+			}
 			.SI_num {
 				width: 15%;
 				display: grid;
 				place-items: center;
+				@media (max-width: 800px) {
+					position: absolute;
+					top: 10px;
+					right: 0;
+					h1 {
+						font-size: 1.2rem;
+					}
+				}
 			}
 			.text_zone {
+				width: 80%;
+				height: 100%;
+				@media (max-width: 800px) {
+					width: 100%;
+				}
 				.title {
 					margin-bottom: 10px;
 					h2 {
@@ -154,10 +177,17 @@ body {
 					align-items: center;
 					justify-content: space-between;
 					margin-bottom: 15px;
+					@media (max-width: 800px) {
+						flex-direction: column;
+						align-items: flex-start;
+					}
 					p {
 						width: 75%;
 						font-size: 0.9rem;
 						font-weight: 500;
+						@media (max-width: 800px) {
+							width: 100%;
+						}
 					}
 					button {
 						width: 150px;
@@ -171,13 +201,25 @@ body {
 						background-color: transparent;
 						color: #3810db;
 						text-transform: capitalize;
+						transition: all 0.5s ease;
+						&:hover {
+							background-color: #3810db;
+							color: white;
+							transform: scale(0.95);
+						}
+						@media (max-width: 800px) {
+							margin: 10px 0;
+						}
 					}
 				}
 				.icons {
-					width: 50%;
+					width: 70%;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+					@media (max-width: 800px) {
+						width: 100%;
+					}
 					.icon {
 						display: flex;
 						align-items: center;
@@ -197,6 +239,8 @@ body {
 		}
 	}
 }
+
+
 .learn_section {
 	width: 100%;
 	height: 100%;
