@@ -87,6 +87,10 @@ body {
 
 .overview_section .overview_zone {
   width: 100%;
+}
+
+.overview_section .overview_zone .details_section {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +100,7 @@ body {
 }
 
 @media (max-width: 750px) {
-  .overview_section .overview_zone {
+  .overview_section .overview_zone .details_section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -273,6 +277,8 @@ body {
 
 .overview_section .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .overview_section .accordion button {
@@ -381,7 +387,7 @@ body {
   -webkit-transition: opacity 200ms linear, max-height 200ms linear;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -635,7 +641,11 @@ body {
   }
 }
 
-.learn_section .title h1 {
+.learn_section .learn_section_title {
+  height: 50px;
+}
+
+.learn_section .learn_section_title h1 {
   font-weight: 500;
   color: #616370;
 }
@@ -647,7 +657,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
 }
 
 @media (max-width: 800px) {
@@ -662,6 +671,7 @@ body {
 
 .learn_section .learn_details .text_zone {
   width: 50%;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
